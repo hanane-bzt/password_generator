@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="inputPassword" >
+        <h1>Get your password</h1>
+        <div class="passwordBox">
+            <input type="text" id="password" readonly>
+        </div>
+        <div class="button">
+            <button onclick="generatePassword()" id="generate">Generate the password</button>
+            <button onclick="copyPassword()" id="copy">Copy the password</button>
+            <button onclick="clearPassword()" id="clear">Clear the password</button>
+        </div>
+    </section>
+
+    <section class="hashMessage">
+        <h1>Hash your message</h1>
+        <div class="messageBox">
+            <textarea id="message" placeholder="Paste your password "></textarea>
+        </div>
+        <div class="hashedBox">
+            <input type="text" id="hashedMessage" readonly>
+        </div>
+        <div class="button">
+            <button onclick="hashMessage()" id="hash">Hash your password</button>
+            <button onclick="copyHashedMessage()" id="copyHashed">Copy the hashed password</button>
+            <button onclick="clearMessage()" id="clearMessage">Clear the password</button>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
